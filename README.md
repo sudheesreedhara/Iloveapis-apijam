@@ -4,7 +4,7 @@
 Welcome to Apigee API Jam workshop. This hands-on workshop takes into account the experience of hundreds of customers who have used Apigee Edge to implement a successful API program. By the end of this workshop, you will walk away with practical experience using the Apigee Edge platform, along with an understanding of its comprehensive capabilities.
 
 ### Before you begin
-- Sign-up for a Apigee trial account at https://login.apigee.com/sign__up
+- Sign-up for a Apigee trial account at https://login.apigee.com/sign__up If you already have an account, skip this step.
 
 ### Agenda
 

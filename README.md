@@ -9,7 +9,5 @@ This workshop will be valuable to API developers, architects, and anyone who wan
 - Sign-up for a trial account at https://login.apigee.com/sign__up Once the account is created, we will notify you on the registered email. This could take a few minutes.
 - Laptop, Internet connection, Browser (Chrome or Firefox), and a desire to have fun building APIs!
 
-## Agenda
-
 ### License
 All of the material here is released under the Apache 2.0 license

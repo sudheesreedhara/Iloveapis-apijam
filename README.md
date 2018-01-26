@@ -5,9 +5,17 @@ Welcome to Apigee API Jam workshop. This hands-on workshop takes into account th
 
 This workshop will be valuable to API developers, architects, and anyone who wants to understand how to create a successful API program.
 
-### Pre-requisites
+In this session, you do the following:
+
+1. 
+2. 
+3. 
+4. 
+
+### Before you begin
 - Sign-up for a trial account at https://login.apigee.com/sign__up Once the account is created, we will notify you on the registered email. This could take a few minutes.
-- Laptop, Internet connection, Browser (Chrome or Firefox), and a desire to have fun building APIs!
+
+Let's get started... 
 
 ### License
 All of the material here is released under the Apache 2.0 license

@@ -5,6 +5,7 @@ Welcome to Apigee API Jam workshop. This hands-on workshop takes into account th
 
 ### Before you begin
 - Sign-up for a Apigee trial account at https://login.apigee.com/sign__up If you already have an account, skip this step.
+- Download the latest release from this project in zip format.
 
 ### Agenda
 

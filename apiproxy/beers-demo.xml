@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="11" name="beers-demo">
+    <Basepaths>/get-beers</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1517416344713</CreatedAt>
+    <CreatedBy>defaultUser</CreatedBy>
+    <Description>Expose a public Beers API with security, mediation, and transformation policies</Description>
+    <DisplayName>beers-demo</DisplayName>
+    <LastModifiedAt>1517423086708</LastModifiedAt>
+    <LastModifiedBy>defaultUser</LastModifiedBy>
+    <Policies>
+        <Policy>CacheResponse</Policy>
+        <Policy>CreateCustomHeaders</Policy>
+        <Policy>CreateISO8601TimeStamp</Policy>
+        <Policy>DisableTargetCopyPathSuffix</Policy>
+        <Policy>EnforceQuota</Policy>
+        <Policy>JSONThreatProtection</Policy>
+        <Policy>NotFound</Policy>
+        <Policy>ParameterToHeaderTransformation</Policy>
+        <Policy>RemoveApikey</Policy>
+        <Policy>SQLCodeProtection</Policy>
+        <Policy>SpikeArrest</Policy>
+        <Policy>StripProxyPathSuffix</Policy>
+        <Policy>TransformJSONToXML</Policy>
+        <Policy>VerifyApiKey</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://create_custom_headers.js</Resource>
+        <Resource>jsc://create_iso_8601_time_stamp.js</Resource>
+        <Resource>jsc://parameter_to_header_transformation.js</Resource>
+        <Resource>jsc://strip_proxy_path_suffix.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+        <TargetEndpoint>httpbin</TargetEndpoint>
+    </TargetEndpoints>
+    <validate>false</validate>
+</APIProxy>

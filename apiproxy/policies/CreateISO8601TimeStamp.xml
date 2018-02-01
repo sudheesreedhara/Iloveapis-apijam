@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Javascript async="false" continueOnError="false" enabled="true" timeLimit="200" name="CreateISO8601TimeStamp">
+    <DisplayName>CreateISO8601TimeStamp</DisplayName>
+    <Properties/>
+    <ResourceURL>jsc://create_iso_8601_time_stamp.js</ResourceURL>
+</Javascript>

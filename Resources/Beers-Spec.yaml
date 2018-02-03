@@ -19,7 +19,7 @@ securityDefinitions:
     in: query
     name: apikey
 paths:
-  /1:
+  /{beer-uuid}:
     get:
       summary: find beers 1
       operationId: find-beers
@@ -213,3 +213,8 @@ paths:
           type: string
           description: API key of your application
           required: true
+        - name: beer-uuid
+          in: path
+          required: true
+          description: Id of a Beer
+          type: integer

@@ -1,0 +1,215 @@
+swagger: '2.0'
+info:
+  description: This is a sample API for Beer
+  version: 1.0.0
+  title: Beer APIs
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+host: <your-apigee-org-name>-test.apigee.net
+basePath: /v1/beers
+security:
+  - APIKeyQueryParam: []
+schemes:
+  - https
+  - http
+securityDefinitions:
+  APIKeyQueryParam:
+    type: apiKey
+    in: query
+    name: apikey
+paths:
+  /1:
+    get:
+      summary: find beers 1
+      operationId: find-beers
+      produces:
+        - application/json; charset=utf-8
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: array
+            description: ''
+            minItems: 1
+            uniqueItems: true
+            items:
+              type: object
+              properties:
+                id:
+                  type: number
+                name:
+                  type: string
+                  minLength: 1
+                tagline:
+                  type: string
+                  minLength: 1
+                first_brewed:
+                  type: string
+                  minLength: 1
+                description:
+                  type: string
+                  minLength: 1
+                image_url:
+                  type: string
+                  minLength: 1
+                abv:
+                  type: number
+                ibu:
+                  type: number
+                target_fg:
+                  type: number
+                target_og:
+                  type: number
+                ebc:
+                  type: number
+                srm:
+                  type: number
+                ph:
+                  type: number
+                attenuation_level:
+                  type: number
+                volume:
+                  type: object
+                  properties:
+                    value:
+                      type: number
+                    unit:
+                      type: string
+                      minLength: 1
+                  required:
+                    - value
+                    - unit
+                boil_volume:
+                  type: object
+                  properties:
+                    value:
+                      type: number
+                    unit:
+                      type: string
+                      minLength: 1
+                  required:
+                    - value
+                    - unit
+                method:
+                  type: object
+                  properties:
+                    mash_temp:
+                      type: array
+                      uniqueItems: true
+                      minItems: 1
+                      items:
+                        required:
+                          - duration
+                        properties:
+                          temp:
+                            type: object
+                            properties:
+                              value:
+                                type: number
+                              unit:
+                                type: string
+                                minLength: 1
+                            required:
+                              - value
+                              - unit
+                          duration:
+                            type: number
+                    fermentation:
+                      type: object
+                      properties:
+                        temp:
+                          type: object
+                          properties:
+                            value:
+                              type: number
+                            unit:
+                              type: string
+                              minLength: 1
+                          required:
+                            - value
+                            - unit
+                      required:
+                        - temp
+                    twist: {}
+                  required:
+                    - mash_temp
+                    - fermentation
+                ingredients:
+                  type: object
+                  properties:
+                    malt:
+                      type: array
+                      uniqueItems: true
+                      minItems: 1
+                      items:
+                        required:
+                          - name
+                        properties:
+                          name:
+                            type: string
+                            minLength: 1
+                          amount:
+                            type: object
+                            properties:
+                              value:
+                                type: number
+                              unit:
+                                type: string
+                                minLength: 1
+                            required:
+                              - value
+                              - unit
+                    hops:
+                      type: array
+                      uniqueItems: true
+                      minItems: 1
+                      items:
+                        required:
+                          - name
+                          - add
+                          - attribute
+                        properties:
+                          name:
+                            type: string
+                            minLength: 1
+                          amount:
+                            type: object
+                            properties:
+                              value:
+                                type: number
+                              unit:
+                                type: string
+                                minLength: 1
+                            required:
+                              - value
+                              - unit
+                          add:
+                            type: string
+                            minLength: 1
+                          attribute:
+                            type: string
+                            minLength: 1
+                    yeast:
+                      type: string
+                      minLength: 1
+                  required:
+                    - malt
+                    - hops
+                    - yeast
+                food_pairing:
+                  type: array
+                  items:
+                    properties: {}
+                brewers_tips:
+                  type: string
+                  minLength: 1
+                contributed_by:
+                  type: string
+                  minLength: 1
+      parameters:
+        - name: apikey
+          in: query
+          type: string
+          description: API key of your application
+          required: true

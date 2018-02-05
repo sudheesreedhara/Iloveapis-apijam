@@ -37,10 +37,10 @@ An API Proxy Bundle is a collection of API Proxy artifacts and policies that rep
 
     * Proxy Name : **Beers**
 
-.5 Click on the link to view your API proxy in Proxy Editor. Then click the **Deployment **dropdown, select the **test** environment, then **Deploy** from the **Overview** tab. 
+5. Click on the link to view your API proxy in Proxy Editor. Then click the **Deployment **dropdown, select the **test** environment, then **Deploy** from the **Overview** tab. 
 ![image alt text](./images/image_3.png)
 
-.6 Once your API is deployed successfully, select **Develop** in the right side tab bar menu and the API Proxy configuration view is displayed.
+6. Once your API is deployed successfully, select **Develop** in the right side tab bar menu and the API Proxy configuration view is displayed.
 
 ## Lab 2: Explore policies
 

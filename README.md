@@ -63,7 +63,7 @@ The Spike Arrest policy protects against traffic spikes. It throttles the number
 
 ![image alt text](./images/image_5.png)
 
-*curl https://{***_FQDN_***}/v1/beers/1*
+*curl https://{**FQDN**}/v1/beers/1*
 
 Refresh your browser a few times to trigger the **Spike Arrest** policy. 
 

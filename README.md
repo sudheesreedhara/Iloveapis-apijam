@@ -83,7 +83,9 @@ In this lab, we will see how to use the Apigee management APIs to automate the p
 
 1. Get OAuth credentials to access management APIs. 
 
-        curl -H "Content-Type:application/x-www-form-urlencoded;charset=utf-8" -H "Accept: application/json;charset=utf-8" -H "Authorization: Basic ZWRnZWNsaTplZGdlY2xpc2VjcmV0"  -X POST https://login.apigee.com/oauth/token -d 'username={YOUR EMAIL}&password={YOUR_PASSWORD}&grant_type=password'
+```
+curl -H "Content-Type:application/x-www-form-urlencoded;charset=utf-8" -H "Accept: application/json;charset=utf-8" -H "Authorization: Basic ZWRnZWNsaTplZGdlY2xpc2VjcmV0"  -X POST https://login.apigee.com/oauth/token -d 'username={YOUR EMAIL}&password={YOUR_PASSWORD}&grant_type=password'
+```
 
 **NOTE** : Use "*Basic ZWRnZWNsaTplZGdlY2xpc2VjcmV0*" value exactly as shown here. It is a hard-coded value that the API requires in the Authorization header.
 
@@ -96,7 +98,9 @@ We will need the **access_tokens** to make all subsequent calls.
 2. Use the management APIs to promote the proxy deployed in test to prod environment. 
 *Execution time will be a minute or two*
 
-        curl -X POST -H "Content-type:application/x-www-form-urlencoded" https://api.enterprise.apigee.com/v1/o/{**Your-org-Name**}/e/prod/apis/{**Your-proxy-name**}/revisions/1/deployments -H "Authorization: Bearer {**Access_token here**}"
+```
+curl -X POST -H "Content-type:application/x-www-form-urlencoded" https://api.enterprise.apigee.com/v1/o/{Your-org-Name}/e/prod/apis/{Your-proxy-name}/revisions/1/deployments -H "Authorization: Bearer {Access_token here}"
+```
 
 You should see a response which looks like this: 
 

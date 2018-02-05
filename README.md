@@ -180,7 +180,8 @@ Now that we have an API Key (the Consumer Key), we can test our proxy.
 
 4. Click **Start Trace Session**, then add **?apikey={the key you copied}** to the URL and click **Send**.
 
-	E.g.  https://{**FQDN**}/v1/beers/1?**apikey={the key you copied}**
+E.g. If the key you copied is *usWFw1YYMvXRIrl7H543cGbo26eNcnGu* then your final URL should look like this https://{**FQDN**}/v1/beers/1?**apikey=usWFw1YYMvXRIrl7H543cGbo26eNcnGu** 
+
 
 ## Lab 5: Publish APIs to Developer Portal
 

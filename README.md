@@ -186,7 +186,7 @@ Now that we have an API Key (the Consumer Key), we can test our proxy.
 
 4. Click **Start Trace Session**, then add **?apikey={the key you copied}** to the URL and click **Send**.
 
-	E.g.  *https://{**FQDN**}/v1/beers/1**?apikey={the key you copied}**
+	E.g.  https://{**FQDN**}/v1/beers/1?**apikey={the key you copied}**
 
 ## Lab 5: Publish APIs to Developer Portal
 
@@ -200,7 +200,7 @@ In this lab, we will create & customize a developer portal and publish the Beer 
 
 1. Navigate to **Publish → API Products**
 
-2. Select the **BeerCatalog **product you created in the previous lab.
+2. Select the **BeerCatalog** product you created in the previous lab.
 
 3. Click on **Edit** and replace the value in **Description **field with the content from [here](https://raw.githubusercontent.com/sudheesreedhara/Iloveapis-apijam/master/Resources/product-snippet.html). 
 
@@ -208,11 +208,11 @@ In this lab, we will create & customize a developer portal and publish the Beer 
 
 ### Import OpenAPI Spec
 
-1. Navigate to **Develop → Specs. **
+1. Navigate to **Develop → Specs.**
 
-2. Click **+ Spec and **select **Import URL**
+2. Click **+ Spec** and select **Import URL**
 
-    1. Import Name - ** Beer-Spec**
+    1. Import Name - **Beer-Spec**
 
     2. Import Url - [https://raw.githubusercontent.com/sudheesreedhara/Iloveapis-apijam/master/Resources/Beers-Spec.yaml](https://raw.githubusercontent.com/sudheesreedhara/Iloveapis-apijam/master/Resources/Beers-Spec.yaml) 
 

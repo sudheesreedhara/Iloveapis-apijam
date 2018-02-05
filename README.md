@@ -17,7 +17,6 @@ Welcome to Apigee API Jam workshop. This hands-on workshop takes into account th
 In this lab, we will import a pre-built API proxy bundle into the Apigee Edge platform. 
 
 ### API Proxy Bundle
-
 An API Proxy Bundle is a collection of API Proxy artifacts and policies that represent the configuration of such API Proxy. [https://docs.apigee.com/api-services/content/build-simple-api-proxy](https://docs.apigee.com/api-services/content/build-simple-api-proxy) 
 
 #### Instructions
@@ -54,7 +53,7 @@ The Spike Arrest policy protects against traffic spikes. It throttles the number
 
 **Instructions:**
 
-**2.1**  Navigate to the **Target Endpoints **default** Preflow **and highlight the **Spike Arrest **policy. The default **Spike Arrest** rate in the API Proxy is 10pm.
+1. Navigate to the **Target Endpoints** default **Preflow** and highlight the **Spike Arrest** policy. The default **Spike Arrest** rate in the API Proxy is 10pm.
 
 ![image alt text](./images/image_4.png)
 

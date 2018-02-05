@@ -238,9 +238,9 @@ In this lab, we will create & customize a developer portal and publish the Beer 
 
 ### Customize the Developer portal
 
-1. Download the **logo.png** file from [here](https://github.com/sudheesreedhara/Iloveapis-apijam/blob/master/Resources/logo.png). 
+1. Download the **logo.png** file from [here](https://github.com/sudheesreedhara/Iloveapis-apijam/blob/master/Resources/logo.png). This will open a browser tab. Right-click and Save image as **logo.png**.
 
-2. Download **portal-hero.jpg** file from [here](https://github.com/sudheesreedhara/Iloveapis-apijam/blob/master/Resources/portal-hero.jpg). We will use these files in the subsequent steps.
+2. Download **portal-hero.jpg** file from [here](https://github.com/sudheesreedhara/Iloveapis-apijam/blob/master/Resources/portal-hero.jpg). We will use these files in the subsequent steps. This will open a browser tab. Right-click and Save image as **portal-hero.jpg**.
 
 3. Click on the name of the newly created portal.
 

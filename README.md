@@ -29,14 +29,14 @@ An API Proxy Bundle is a collection of API Proxy artifacts and policies that rep
 
 ![image alt text](./images/image_1.png)
 
-3. Navigate the **Develop → API Proxies** on the left side menu, click **+ Proxy** in the top right corner to invoke the Create Proxy Wizard. Then select **Proxy Bundle**, and click next. 
+3. Navigate the **Develop → API Proxies** on the left side menu, click **+Proxy** in the top right corner to invoke the Create Proxy Wizard. Then select **Proxy Bundle**, and click next. 
 ![image alt text](./images/image_2.png)
 
-4. You will need to click on the **Choose File** button next to the **ZIP Bundle **option and select the **beers_apiproxy_bundle.zip** from the Github repository you downloaded above. Enter the following details in the proxy wizard and click **Next**, then **Build.**
+4. You will need to click on the **Choose File** button next to the **ZIP Bundle** option and select the **beers_apiproxy_bundle.zip** from the Github repository you downloaded above. Enter the following details in the proxy wizard and click **Next**, then **Build.**
 
     * Proxy Name : **Beers**
 
-5. Click on the link to view your API proxy in Proxy Editor. Then click the **Deployment **dropdown, select the **test** environment, then **Deploy** from the **Overview** tab. 
+5. Click on the link to view your API proxy in Proxy Editor. Then click the **Deployment** dropdown, select the **test** environment, then **Deploy** from the **Overview** tab. 
 ![image alt text](./images/image_3.png)
 
 6. Once your API is deployed successfully, select **Develop** in the right side tab bar menu and the API Proxy configuration view is displayed.
@@ -57,17 +57,18 @@ The Spike Arrest policy protects against traffic spikes. It throttles the number
 
 ![image alt text](./images/image_4.png)
 
-**2.2**    Select **Trace ** in the right side tab bar menu and the API Proxy configuration view is displayed and select **Start Trace Session. **
+2. Select **Trace** in the right side tab bar menu and the API Proxy configuration view is displayed and select **Start Trace Session.**
 
-** 2.3**   Select **Overview** in the right side tab bar menu and select the **Deployments URL. **A new browser window will open and your will see a default HTTP 404 message. Add a forward slash and number I.E. **/1 **to the URL in your browser to return sample beer data. 
+3. Select **Overview** in the right side tab bar menu and select the **Deployments URL**. A new browser window will open and your will see a default HTTP 404 message. Add a forward slash and number. i.e. **/1** to the URL in your browser to return sample beer data. 
 
 ![image alt text](./images/image_5.png)
 
 *curl https://{***_FQDN_***}/v1/beers/1*
 
-Refresh your browser a few times to trigger the **Spike Arrest **policy. 
+Refresh your browser a few times to trigger the **Spike Arrest** policy. 
 
-Navigate back to the **Trace **right side tab bar menu, click on the **Spike Arrest** policy icon in the **Transaction Map** to view the flow details in the **Phase Details** section below.** **![image alt text](./images/image_6.png)
+Navigate back to the **Trace** right side tab bar menu, click on the **Spike Arrest** policy icon in the **Transaction Map** to view the flow details in the **Phase Details** section below. 
+![image alt text](./images/image_6.png)
 
 ### Verify API Key Policy
 
@@ -75,7 +76,7 @@ The Verify API Key policy lets you enforce verification of API keys at runtime, 
 
 **Instructions:**
 
-**2.4 **Navigate to the **Proxy Endpoints **default** Preflow **and highlight the **Verify API Key **policy. Change the ‘enabled=**false’** to ‘enabled=**true’**, then click the blue **Save** button.
+1. Navigate to the **Proxy Endpoints** default **Preflow** and highlight the **Verify API Key** policy. Change the ‘enabled=**false’** to ‘enabled=**true’**, then click the blue **Save** button.
 
 ![image alt text](./images/image_7.png)
 

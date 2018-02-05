@@ -8,8 +8,7 @@ Welcome to Apigee API Jam workshop. This hands-on workshop takes into account th
 
 * **Apigee Account** - If you don’t have an account, sign-up for a trial account at [https://login.apigee.com/sign__up](https://login.apigee.com/sign__up)  We will notify you on the registered email, once the account is created. This could take a few minutes.
 
-* **REST Client** - cUrl or Postman 
-  ** Here you will find the postman collection with all the APIs: https://www.getpostman.com/collections/2ad2fcdaf01a2058abb4
+* **REST Client** - cUrl or Postman.  If you use Postman, you can import the collection from here - https://www.getpostman.com/collections/2ad2fcdaf01a2058abb4
 
 ## Lab 1: Import a proxy
 

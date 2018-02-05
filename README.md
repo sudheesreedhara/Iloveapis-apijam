@@ -44,8 +44,8 @@ An API Proxy Bundle is a collection of API Proxy artifacts and policies that rep
 
  ### Call loadGenerator API 
      Now we are going to call load generator API to populate some data for Analytics
-     *Postman* Call the loadgenerator API
-     *Curl* 'curl https://amer-demo14-test.apigee.net/v1/loadgenerator' 
+     **Postman** Call the loadgenerator API
+     **Curl** 'curl https://{FQDN}/v1/loadgenerator' 
 
 
 ## Lab 2: Explore policies
@@ -314,43 +314,8 @@ In this lab, we will create & customize a developer portal and publish the Beer 
 
 ### Summary
 
-We are going to generate load against the Beer Proxy and then analyze the resulting traffic in a Custom Report.
+We are going to  the  traffic in a Custom Report.
 
-### Generate Load
-
-The first step is to create some traffic that invokes an HTTP GET on random beer id’s on the Beer Proxy (e.g. "/v1/beers/1" or “/v1/beers/4”).  You can use Apigee’s Javascript policy to do this as we’ll see below.
-
-#### Instructions
-
-1. Navigate to **Develop -> API Proxies**
-
-2. Select the **Beers** proxy.
-
-3. Click on **Develop** in the upper right.
-
-![image alt text](./images/image_30.png)
-
-4. Select **PreFlow** under the **loadgenerator** Proxy Endpoint in the lower left column/pane.  
-
-![image alt text](./images/image_31.png)
-
-5. Notice the yellow JavaScript (JS) policy named **LoadGenerator-JS** has already been created for you.  When you select it, you will see its XML configuration and you should notice that it runs some JavaScript code in a file named **load_generator.js**.
-
-6. Click on **load_generator.js** on the bottom left area of the screen.  This is the JavaScript code we wrote to generate some random traffic against the Beer Proxy.  You could always modify this code to create load as you’d like, but for this Lab just leave it as is.
-
-![image alt text](./images/image_32.png)
-
-7. Before we generate the random load, we need to disable the Spike Arrest Policy that we saw earlier.  Select **PreFlow** under **TargetEndpoints** in the left column/pane.  Then Select the **Spike Arrest** Policy in the upper right pane.  Modify the XML for the Spike Arrest policy so **enabled="false”**.  Click **Save** in the upper left  when done.
-
-![image alt text](./images/image_33.png)
-
-8. We will also need to disable the **Verify API Key Policy**.  Select **PreFlow** under **ProxyEndpoints** and select the **Verify API Key Policy**.  Then change **enabled="true”** to **enabled=”false”** and click **Save.**
-
-![image alt text](./images/image_34.png)
-
-9. Now click on the **Trace** tab in the upper right of the screen.  If necessary, modify the URL after the hostname to be  **/v1/loadgenerator**.  Then click on **Start Trace Session**, and finally click on **Send** to generate some load against the Beer Proxy.  In the left column/pane, you can see several HTTP GET calls are made for randomly chosen beer id’s.
-
-![image alt text](./images/image_35.png)
 
 ### Capture Statistics for Custom Reports
 

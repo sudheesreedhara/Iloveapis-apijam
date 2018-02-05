@@ -132,11 +132,11 @@ A Product is a logical grouping of Proxies.  In this section we will create a **
 
 2. Click **+API Product** in the upper right
 
-	![image alt text](./images/image_11.png)
+![image alt text](./images/image_11.png)
 
-3. Name the product **BeerCatalog**.  Set the Environment to **test**, Access to **Public**, and Key Approval to **Automatic**.  Using the **+API Proxy** on the lower right, choose the **Beers **proxy from the dropdown list.  Click **Save**.
+3. Name the product **BeerCatalog**.  Set the Environment to **test**, Access to **Public**, and Key Approval to **Automatic**.  Using the **+API Proxy** on the lower right, choose the **Beers** proxy from the dropdown list.  Click **Save**.
 
-	![image alt text](./images/image_12.png)
+![image alt text](./images/image_12.png)
 
 ### Define a Developer
 
@@ -154,7 +154,7 @@ A Developer owns an Application, so we need to create a Developer next.
 
 ### Define an Application
 
-We grant an Application access to a Product.  We will now define an Application to use our Product.
+We grant an Application access to a Product. We will now define an Application to use our Product.
 
 #### Instructions
 
@@ -202,7 +202,7 @@ In this lab, we will create & customize a developer portal and publish the Beer 
 
 2. Select the **BeerCatalog** product you created in the previous lab.
 
-3. Click on **Edit** and replace the value in **Description **field with the content from [here](https://raw.githubusercontent.com/sudheesreedhara/Iloveapis-apijam/master/Resources/product-snippet.html). 
+3. Click on **Edit** and replace the value in **Description** field with the content from [here](https://raw.githubusercontent.com/sudheesreedhara/Iloveapis-apijam/master/Resources/product-snippet.html). 
 
 4. Click on **Save**.
 
@@ -228,7 +228,7 @@ In this lab, we will create & customize a developer portal and publish the Beer 
 
 1. Navigate to **Publish → Portals**
 
-2. Click on **+ Portals **to create a new portal. 
+2. Click on **+ Portals** to create a new portal. 
 
     1. Name - BeerPortal
 
@@ -238,7 +238,7 @@ In this lab, we will create & customize a developer portal and publish the Beer 
 
 ### Customize the Developer portal
 
-1. Download the** logo.png** file from [here](https://github.com/sudheesreedhara/Iloveapis-apijam/blob/master/Resources/logo.png). 
+1. Download the **logo.png** file from [here](https://github.com/sudheesreedhara/Iloveapis-apijam/blob/master/Resources/logo.png). 
 
 2. Download **portal-hero.jpg** file from [here](https://github.com/sudheesreedhara/Iloveapis-apijam/blob/master/Resources/portal-hero.jpg). We will use these files in the subsequent steps.
 
@@ -248,7 +248,7 @@ In this lab, we will create & customize a developer portal and publish the Beer 
 
 4. Click **Assets**
 
-5. Click **+ File **and upload the **logo.png **and **portal-hero.jpg **files.
+5. Click **+ File** and upload the **logo.png** and **portal-hero.jpg** files.
 
 6. Select **Themes** from the drop-down at the top.
 

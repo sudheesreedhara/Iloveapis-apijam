@@ -44,9 +44,10 @@ An API Proxy Bundle is a collection of API Proxy artifacts and policies that rep
  ### Call loadGenerator API 
   Now we are going to call load generator API to populate some data for Analytics
 
-  *  **Postman** Call the loadgenerator API
-  *  **Curl** 'curl https://{FQDN}/v1/loadgenerator' 
-
+  *  If you are using **Postman**, then call the loadgenerator API.
+  *  If you are using **cUrl**, then
+  
+  ```curl https://{FQDN}/v1/loadgenerator```
 
 ## Lab 2: Explore policies
 

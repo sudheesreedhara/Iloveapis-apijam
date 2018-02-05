@@ -6,7 +6,7 @@ Welcome to Apigee API Jam workshop. This hands-on workshop takes into account th
 
 ## Pre-requisites
 
-* **Apigee Account** - If you don’t have an account, sign-up for a trial account at [https://login.apigee.com/sign__up](https://login.apigee.com/sign__up)  We will notify you on the registered email, once the account is created. This could take a few minutes. .
+* **Apigee Account** - If you don’t have an account, sign-up for a trial account at [https://login.apigee.com/sign__up](https://login.apigee.com/sign__up)  We will notify you on the registered email, once the account is created. This could take a few minutes.
 
 * **REST Client** - cUrl or Postman 
 

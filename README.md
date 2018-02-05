@@ -196,7 +196,7 @@ In this lab, we will create & customize a developer portal and publish the Beer 
 
 #### Instructions
 
-### Update Product configuration
+### Update Product configuration (optional)
 
 1. Navigate to **Publish → API Products**
 
@@ -236,7 +236,7 @@ In this lab, we will create & customize a developer portal and publish the Beer 
 
 3. Click **Create.**
 
-### Customize the Developer portal
+### Customize the Developer portal (optional)
 
 1. Download the **logo.png** file from [here](https://github.com/sudheesreedhara/Iloveapis-apijam/blob/master/Resources/logo.png). This will open a browser tab. Right-click and Save image as **logo.png**.
 

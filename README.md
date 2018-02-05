@@ -182,11 +182,11 @@ Now that we have an API Key (the Consumer Key), we can test our proxy.
 
 2. Choose the **Trace** tab.
 
-3. Select **Environment test **in the Deployment to Trace dropdown.
+3. Select **Environment test** in the Deployment to Trace dropdown.
 
-4. Click **Start Trace Session**, then add **?apikey=<the key you copied>** to the URL and click **Send**.
+4. Click **Start Trace Session**, then add **?apikey={the key you copied}** to the URL and click **Send**.
 
-	E.g.  *https://{***_FQDN_***}/v1/beers/1***?apikey=<the key you copied>**
+	E.g.  *https://{**FQDN**}/v1/beers/1**?apikey={the key you copied}**
 
 ## Lab 5: Publish APIs to Developer Portal
 

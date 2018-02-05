@@ -33,13 +33,14 @@ An API Proxy Bundle is a collection of API Proxy artifacts and policies that rep
 3. Navigate the **Develop → API Proxies** on the left side menu, click **+ Proxy** in the top right corner to invoke the Create Proxy Wizard. Then select **Proxy Bundle**, and click next. 
 ![image alt text](./images/image_2.png)
 
-**1.4 **You will need to click on the **Choose File** button next to the **ZIP Bundle **option and select the **beers_apiproxy_bundle.zip** from the Github repository you downloaded above. Enter the following details in the proxy wizard and click **Next**, then **Build.**
+4. You will need to click on the **Choose File** button next to the **ZIP Bundle **option and select the **beers_apiproxy_bundle.zip** from the Github repository you downloaded above. Enter the following details in the proxy wizard and click **Next**, then **Build.**
 
     * Proxy Name : **Beers**
 
-**1.5 **Click on the link to view your API proxy in Proxy Editor. Then click the **Deployment **dropdown, select the **test** environment, then **Deploy** from the **Overview **tab. ![image alt text](./images/image_3.png)
+.5 Click on the link to view your API proxy in Proxy Editor. Then click the **Deployment **dropdown, select the **test** environment, then **Deploy** from the **Overview** tab. 
+![image alt text](./images/image_3.png)
 
-**1.6** Once your API is deployed successfully, select **Develop** in the right side tab bar menu and the API Proxy configuration view is displayed.
+.6 Once your API is deployed successfully, select **Develop** in the right side tab bar menu and the API Proxy configuration view is displayed.
 
 ## Lab 2: Explore policies
 

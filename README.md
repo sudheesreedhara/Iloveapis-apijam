@@ -1,16 +1,5 @@
 ![IloveAPIs](https://live-hl-apigeecom.devportal.apigee.com/sites/default/files/2017-12/API_City_01_595X360_White_SubtitleCities.png)
 
-# Apigee API Jam 
-Welcome to Apigee API Jam workshop. This hands-on workshop takes into account the experience of hundreds of customers who have used Apigee Edge to implement a successful API program. By the end of this workshop, you will walk away with practical experience using the Apigee Edge platform, along with an understanding of its comprehensive capabilities.
-
-### Before you begin
-- Sign-up for a Apigee trial account at https://login.apigee.com/sign__up If you already have an account, skip this step.
-- Download the latest release from this project in zip format.
-
-### License
-All of the material here is released under the Apache 2.0 license
-
-
 # Apigee API Jam Lab Guide
 
 Welcome to Apigee API Jam workshop. This hands-on workshop takes into account the experience of hundreds of customers who have used Apigee Edge to implement a successful API program. By the end of this workshop, you will walk away with practical experience using the Apigee Edge platform, along with an understanding of its comprehensive capabilities.
@@ -21,7 +10,7 @@ Welcome to Apigee API Jam workshop. This hands-on workshop takes into account th
 
 * **REST Client** - cUrl or Postman 
 
-## **Lab 1: Import a proxy**
+## Lab 1: Import a proxy
 
 ### Summary
 
@@ -33,15 +22,16 @@ An API Proxy Bundle is a collection of API Proxy artifacts and policies that rep
 
 #### Instructions
 
-**1.1** Download the Proxy bundle from the [I Love APIs API Jam repository](https://github.com/sudheesreedhara/Iloveapis-apijam/blob/master/Resources/beers_apiproxy_bundle.zip). Click **Download**.
+1. Download the Proxy bundle from the [I Love APIs API Jam repository](https://github.com/sudheesreedhara/Iloveapis-apijam/blob/master/Resources/beers_apiproxy_bundle.zip). Click **Download**.
 
-![image alt text](./images/./images/image_0.png)
+![image alt text](./images/image_0.png)
 
-**1.2** Go to [https://apigee.com/edge](https://apigee.com/edge) and log in to your new Apigee trial organization. Under your username, select the Organization for which you are an "Organization Administrator"
+2. Go to [https://apigee.com/edge](https://apigee.com/edge) and log in to your new Apigee trial organization. Under your username, select the Organization for which you are an "Organization Administrator"
 
 ![image alt text](./images/image_1.png)
 
-**1.3 **Navigate the **Develop** → **API Proxies** on the left side menu, click **+ Proxy** in the top right corner to invoke the Create Proxy Wizard. Then select **Proxy Bundle**, and click next. 		![image alt text](./images/image_2.png)
+3. Navigate the **Develop → API Proxies** on the left side menu, click **+ Proxy** in the top right corner to invoke the Create Proxy Wizard. Then select **Proxy Bundle**, and click next. 
+![image alt text](./images/image_2.png)
 
 **1.4 **You will need to click on the **Choose File** button next to the **ZIP Bundle **option and select the **beers_apiproxy_bundle.zip** from the Github repository you downloaded above. Enter the following details in the proxy wizard and click **Next**, then **Build.**
 
@@ -397,5 +387,8 @@ Apigee Developer Videos
  [https://apigee.com/about/developers](https://apigee.com/about/developers) 
 
 Apigee Edge management APIs [https://docs.apigee.com/api-services/content/api-reference-getting-started](https://docs.apigee.com/api-services/content/api-reference-getting-started) 
+
+### License
+All of the material here is released under the Apache 2.0 license
 
 

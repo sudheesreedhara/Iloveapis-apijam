@@ -244,7 +244,7 @@ In this lab, we will create & customize a developer portal and publish the Beer 
 
 3. Click on the name of the newly created portal.
 
-	![image alt text](./images/image_18.png)
+![image alt text](./images/image_18.png)
 
 4. Click **Assets**
 
@@ -252,27 +252,27 @@ In this lab, we will create & customize a developer portal and publish the Beer 
 
 6. Select **Themes** from the drop-down at the top.
 
-	![image alt text](./images/image_19.png)
+![image alt text](./images/image_19.png)
 
 7. Replace the default style-sheet with [this content](https://raw.githubusercontent.com/sudheesreedhara/Iloveapis-apijam/master/Resources/theme.css).
 
-	![image alt text](./images/image_20.png)
+![image alt text](./images/image_20.png)
 
 8. Click **Publish **to save the changes.
 
 9. Select **Pages** from the drop-down at the top.
 
-	![image alt text](./images/image_21.png)
+![image alt text](./images/image_21.png)
 
 10. Select **Home** page and replace the content with this [snippet](https://raw.githubusercontent.com/sudheesreedhara/Iloveapis-apijam/master/Resources/homepage.html). 
 
-11. Click **Publish **to save the changes.
+11. Click **Publish** to save the changes.
 
-**	**![image alt text](./images/image_22.png)
+![image alt text](./images/image_22.png)
 
-12. Click **Live Portal **to view the customized portal.  
+12. Click **Live Portal** to view the customized portal.  
 
-	![image alt text](./images/image_23.png)
+![image alt text](./images/image_23.png)
 
 13. You should see a portal similar to this - 
 
@@ -286,27 +286,27 @@ In this lab, we will create & customize a developer portal and publish the Beer 
 
 3. Click **+ API**
 
-4. Select **BeerCatalog **product and click **Next**.
+4. Select **BeerCatalog** product and click **Next**.
 
 5. On the next screen,  select  "**Choose a different spec**" from the drop-down.
 
 ![image alt text](./images/image_25.png)
 
-6. Select **Beer-Spec **and** **click **Finish **to publish the API Product and it’s documentation on to the portal**.** 
+6. Select **Beer-Spec** and click **Finish** to publish the API Product and it’s documentation on to the portal.
 
-**	**![image alt text](./images/image_26.png)
+![image alt text](./images/image_26.png)
 
-7. Now if you go to the **Live Portal, **you will see Beer API documentation under APIs menu.
+7. Now if you go to the **Live Portal** you will see Beer API documentation under APIs menu.
 
-	![image alt text](./images/image_27.png)
+![image alt text](./images/image_27.png)
 
 8. Click on the API Doc link.
 
 ![image alt text](./images/image_28.png)
 
-9. Click **Try it out **and invoke the Beer API by providing a valid API key (Hint - Use the API key from **DistributorApp **you created in the previous lab).
+9. Click **Try it out** and invoke the Beer API by providing a valid API key. (Hint - Use the API key from **DistributorApp** you created in the previous lab).
 
-	![image alt text](./images/image_29.png)
+![image alt text](./images/image_29.png)
 
 ## Lab 6: Analytics
 
@@ -354,11 +354,11 @@ The first step is to create some traffic that invokes an HTTP GET on random beer
 
 After you’ve generated some traffic, let’s make sure we are capturing the right data from that traffic so we can analyze it via Custom Reports. 
 
-1.  Click on the **Develop** tab in the upper right.  Then click on **GET /:id **under **Proxy Endpoints**.  In the upper pane, you will see the two policies **Statistics Collector** and **Extract Variables** that we’ve already implemented for you in order to capture the "Beer Name" from the JSON response payload.  Take a look at these two policies but don’t change them -- they are used for creating Custom Reports (next step).
+1.  Click on the **Develop** tab in the upper right.  Then click on **GET /:id** under **Proxy Endpoints**.  In the upper pane, you will see the two policies **Statistics Collector** and **Extract Variables** that we’ve already implemented for you in order to capture the "Beer Name" from the JSON response payload.  Take a look at these two policies but don’t change them -- they are used for creating Custom Reports (next step).
 
 ![image alt text](./images/image_36.png)
 
-1.   Now click on **Analyze ****-****> Reports **in the left pane.  Then click on **+Custom Report**
+1.   Now click on **Analyze > Reports** in the left pane.  Then click on **+Custom Report**
 
 ![image alt text](./images/image_37.png)
 
@@ -389,5 +389,3 @@ Apigee Edge management APIs [https://docs.apigee.com/api-services/content/api-re
 
 ### License
 All of the material here is released under the Apache 2.0 license
-
-

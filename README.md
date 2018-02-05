@@ -258,7 +258,7 @@ In this lab, we will create & customize a developer portal and publish the Beer 
 
 ![image alt text](./images/image_20.png)
 
-8. Click **Publish **to save the changes.
+8. Click **Publish** to save the changes.
 
 9. Select **Pages** from the drop-down at the top.
 

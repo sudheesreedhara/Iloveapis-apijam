@@ -54,34 +54,26 @@ The Spike Arrest policy protects against traffic spikes. It throttles the number
 **Instructions:**
 
 1. Navigate to the **Target Endpoints** default **Preflow** and highlight the **Spike Arrest** policy. The default **Spike Arrest** rate in the API Proxy is 10pm.
-
 ![image alt text](./images/image_4.png)
 
-2. Select **Trace** in the right side tab bar menu and the API Proxy configuration view is displayed and select **Start Trace Session.**
+2. Select **Overview** in the right side tab bar menu and copy the **Beers Deployments URL** for the **test** environment. 
 
-3. Select **Overview** in the right side tab bar menu and select the **Deployments URL**. A new browser window will open and your will see a default HTTP 404 message. Add a forward slash and number. i.e. **/1** to the URL in your browser to return sample beer data. 
-
+3. Select **Trace** in the right side tab bar menu and the API Proxy configuration view will be displayed. Paste the Beers Proxy URL into the **Send Request URL** section and add a forward slash and number I.E. **/1** Select **Start Trace Session**, then click the **Send** button a few times to trigger the **Spike Arrest** policy. Click on the **Spike Arrest** policy icon in the **Transaction Map** to view the flow details in the **Phase Details** section below. 
 ![image alt text](./images/image_5.png)
 
-*curl https://{**FQDN**}/v1/beers/1*
-
-Refresh your browser a few times to trigger the **Spike Arrest** policy. 
-
-Navigate back to the **Trace** right side tab bar menu, click on the **Spike Arrest** policy icon in the **Transaction Map** to view the flow details in the **Phase Details** section below. 
-![image alt text](./images/image_6.png)
+        curl https://{FQDN}/v1/beers/1
 
 ### Verify API Key Policy
 The Verify API Key policy lets you enforce verification of API keys at runtime, letting only apps with approved API keys access your APIs. This policy ensures that API keys are valid, have not been revoked, and are approved to consume the specific resources associated with your API products. 
 
 **Instructions:**
 
-1. Navigate to the **Proxy Endpoints** default **Preflow** and highlight the **Verify API Key** policy. Change the ‘enabled=**false’** to ‘enabled=**true’**, then click the blue **Save** button.
+1. Select **Develop** in the right side tab bar menu. Navigate to the **Proxy Endpoints** default **Preflow** and highlight the **Verify API Key** policy. Change the ‘enabled=**false’** to ‘enabled=**true’**, then click the blue **Save** button.
 ![image alt text](./images/image_7.png)
 
-2. Select **Trace** in the right side tab bar menu and the API Proxy configuration view is displayed and select **Start Trace Session.**
+2. Select **Trace** in the right side tab bar menu and the API Proxy configuration view is displayed and select **Start Trace Session**. Click the **Send** button in the **Send Request URL** section to trigger the **Verify API Key** policy. You should receive a HTTP 401 error.
 
-3. Refresh your browser a few times to trigger the **Verify API Key** policy. You should receive a HTTP 401 error. 
-*curl https://{**FQDN**}/v1/beers/1*
+        curl https://{FQDN}/v1/beers/1
 
 ## Lab 3: Management APIs
 
@@ -91,7 +83,7 @@ In this lab, we will see how to use the Apigee management APIs to automate the p
 
 1. Get OAuth credentials to access management APIs. 
 
-*curl -H "Content-Type:application/x-www-form-urlencoded;charset=utf-8" -H "Accept: application/json;charset=utf-8" -H "Authorization: Basic ZWRnZWNsaTplZGdlY2xpc2VjcmV0"  -X POST https://login.apigee.com/oauth/token -d 'username={YOUR EMAIL}&password={YOUR_PASSWORD}&grant_type=password'*
+        curl -H "Content-Type:application/x-www-form-urlencoded;charset=utf-8" -H "Accept: application/json;charset=utf-8" -H "Authorization: Basic ZWRnZWNsaTplZGdlY2xpc2VjcmV0"  -X POST https://login.apigee.com/oauth/token -d 'username={YOUR EMAIL}&password={YOUR_PASSWORD}&grant_type=password'
 
 **NOTE** : Use "*Basic ZWRnZWNsaTplZGdlY2xpc2VjcmV0*" value exactly as shown here. It is a hard-coded value that the API requires in the Authorization header.
 
@@ -104,9 +96,7 @@ We will need the **access_tokens** to make all subsequent calls.
 2. Use the management APIs to promote the proxy deployed in test to prod environment. 
 *Execution time will be a minute or two*
 
-*curl -X POST -H "Content-type:application/x-www-form-urlencoded" https://api.enterprise.apigee.com/v1/o/{**Your-org-Name**}/e/prod/apis/{**Your-proxy-name**}/revisions/1/deployments*
-
-*-H "Authorization: Bearer {**Access_token here**}"*
+        curl -X POST -H "Content-type:application/x-www-form-urlencoded" https://api.enterprise.apigee.com/v1/o/{**Your-org-Name**}/e/prod/apis/{**Your-proxy-name**}/revisions/1/deployments -H "Authorization: Bearer {**Access_token here**}"
 
 You should see a response which looks like this: 
 

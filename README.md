@@ -17,7 +17,7 @@ Welcome to Apigee API Jam workshop. This hands-on workshop takes into account th
 In this lab, we will import a pre-built API proxy bundle into the Apigee Edge platform. 
 
 ### API Proxy Bundle
-An API Proxy Bundle is a collection of API Proxy artifacts and policies that represent the configuration of such API Proxy. [https://docs.apigee.com/api-services/content/build-simple-api-proxy](https://docs.apigee.com/api-services/content/build-simple-api-proxy) 
+An API Proxy Bundle is a collection of API Proxy artifacts and policies that represent the configuration of such API Proxy. 
 
 #### Instructions
 
@@ -49,7 +49,7 @@ In this lab, we will explore the various API proxy policies that can be configur
 
 ### Spike Arrest Policy
 
-The Spike Arrest policy protects against traffic spikes. It throttles the number of requests processed by an API proxy and sent to a backend, protecting against performance lags and downtime. [https://docs.apigee.com/api-services/reference/spike-arrest-policy](https://docs.apigee.com/api-services/reference/spike-arrest-policy) 
+The Spike Arrest policy protects against traffic spikes. It throttles the number of requests processed by an API proxy and sent to a backend, protecting against performance lags and downtime.
 
 **Instructions:**
 
@@ -71,7 +71,6 @@ Navigate back to the **Trace** right side tab bar menu, click on the **Spike Arr
 ![image alt text](./images/image_6.png)
 
 ### Verify API Key Policy
-
 The Verify API Key policy lets you enforce verification of API keys at runtime, letting only apps with approved API keys access your APIs. This policy ensures that API keys are valid, have not been revoked, and are approved to consume the specific resources associated with your API products. [https://docs.apigee.com/api-services/reference/verify-api-key-policy](https://docs.apigee.com/api-services/reference/verify-api-key-policy) 
 
 **Instructions:**
@@ -80,9 +79,9 @@ The Verify API Key policy lets you enforce verification of API keys at runtime, 
 
 ![image alt text](./images/image_7.png)
 
-**2.5** Select **Trace** in the right side tab bar menu and the API Proxy configuration view is displayed and select **Start Trace Session. **
+2. Select **Trace** in the right side tab bar menu and the API Proxy configuration view is displayed and select **Start Trace Session.**
 
-**2.6** Refresh your browser a few times to trigger the **Verify API Key **policy. You should receive a HTTP 401 error. 
+3. Refresh your browser a few times to trigger the **Verify API Key** policy. You should receive a HTTP 401 error. 
 
 *curl https://{***_FQDN_***}/v1/beers/1*
 
@@ -92,7 +91,7 @@ The Verify API Key policy lets you enforce verification of API keys at runtime, 
 
 In this lab, we will see how to use the Apigee management APIs to automate the promotion of API from a lower environment (test) to a higher environment (prod).
 
-**3.1:** Get OAuth credentials to access management APIs. 
+1. Get OAuth credentials to access management APIs. 
 
 *curl -H "Content-Type:application/x-www-form-urlencoded;charset=utf-8" -H "Accept: application/json;charset=utf-8" -H "Authorization: Basic **ZWRnZWNsaTplZGdlY2xpc2VjcmV0**"  -X POST https://login.apigee.com/oauth/token -d 'username={YOUR EMAIL}&password={YOUR_PASSWORD}&grant_type=password'*
 
@@ -102,9 +101,10 @@ In this lab, we will see how to use the Apigee management APIs to automate the p
 
 The response should look like this. Copy the first token which starts with access_token Copy the value starting with "ey…..". Do not copy the “”.
 
-We will need the** access_tokens** to make all subsequent calls.
+We will need the **access_tokens** to make all subsequent calls.
 
-**3.2. **Use the management APIs to promote the proxy deployed in test to prod environment. *Execution time will be a minute or two*
+2. Use the management APIs to promote the proxy deployed in test to prod environment. 
+*Execution time will be a minute or two*
 
 *curl -X POST -H "Content-type:application/x-www-form-urlencoded" https://api.enterprise.apigee.com/v1/o/{***_Your-org-Name_***}/e/prod/apis/{***_Your-proxy-name_***}/revisions/1/deployments*
 

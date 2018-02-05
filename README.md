@@ -71,18 +71,16 @@ Navigate back to the **Trace** right side tab bar menu, click on the **Spike Arr
 ![image alt text](./images/image_6.png)
 
 ### Verify API Key Policy
-The Verify API Key policy lets you enforce verification of API keys at runtime, letting only apps with approved API keys access your APIs. This policy ensures that API keys are valid, have not been revoked, and are approved to consume the specific resources associated with your API products. [https://docs.apigee.com/api-services/reference/verify-api-key-policy](https://docs.apigee.com/api-services/reference/verify-api-key-policy) 
+The Verify API Key policy lets you enforce verification of API keys at runtime, letting only apps with approved API keys access your APIs. This policy ensures that API keys are valid, have not been revoked, and are approved to consume the specific resources associated with your API products. 
 
 **Instructions:**
 
 1. Navigate to the **Proxy Endpoints** default **Preflow** and highlight the **Verify API Key** policy. Change the ‘enabled=**false’** to ‘enabled=**true’**, then click the blue **Save** button.
-
 ![image alt text](./images/image_7.png)
 
 2. Select **Trace** in the right side tab bar menu and the API Proxy configuration view is displayed and select **Start Trace Session.**
 
 3. Refresh your browser a few times to trigger the **Verify API Key** policy. You should receive a HTTP 401 error. 
-
 *curl https://{***_FQDN_***}/v1/beers/1*
 
 ## Lab 3: Management APIs
@@ -130,7 +128,7 @@ A Product is a logical grouping of Proxies.  In this section we will create a **
 
 #### Instructions
 
-1. Navigate to **Publish -> API Products****.**
+1. Navigate to **Publish -> API Products**.
 
 2. Click **+API Product** in the upper right
 

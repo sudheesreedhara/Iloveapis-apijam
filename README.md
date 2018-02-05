@@ -11,7 +11,7 @@ Welcome to Apigee API Jam workshop. This hands-on workshop takes into account th
 All of the material here is released under the Apache 2.0 license
 
 
-#Apigee	API Jam Lab Guide
+# Apigee API Jam Lab Guide
 
 Welcome to Apigee API Jam workshop. This hands-on workshop takes into account the experience of hundreds of customers who have used Apigee Edge to implement a successful API program. By the end of this workshop, you will walk away with practical experience using the Apigee Edge platform, along with an understanding of its comprehensive capabilities.
 
@@ -35,19 +35,19 @@ An API Proxy Bundle is a collection of API Proxy artifacts and policies that rep
 
 **1.1** Download the Proxy bundle from the [I Love APIs API Jam repository](https://github.com/sudheesreedhara/Iloveapis-apijam/blob/master/Resources/beers_apiproxy_bundle.zip). Click **Download**.
 
-![image alt text](./image/./image/image_0.png)
+![image alt text](./images/./images/image_0.png)
 
 **1.2** Go to [https://apigee.com/edge](https://apigee.com/edge) and log in to your new Apigee trial organization. Under your username, select the Organization for which you are an "Organization Administrator"
 
-![image alt text](./image/image_1.png)
+![image alt text](./images/image_1.png)
 
-**1.3 **Navigate the **Develop** → **API Proxies** on the left side menu, click **+ Proxy** in the top right corner to invoke the Create Proxy Wizard. Then select **Proxy Bundle**, and click next. 		![image alt text](./image/image_2.png)
+**1.3 **Navigate the **Develop** → **API Proxies** on the left side menu, click **+ Proxy** in the top right corner to invoke the Create Proxy Wizard. Then select **Proxy Bundle**, and click next. 		![image alt text](./images/image_2.png)
 
 **1.4 **You will need to click on the **Choose File** button next to the **ZIP Bundle **option and select the **beers_apiproxy_bundle.zip** from the Github repository you downloaded above. Enter the following details in the proxy wizard and click **Next**, then **Build.**
 
     * Proxy Name : **Beers**
 
-**1.5 **Click on the link to view your API proxy in Proxy Editor. Then click the **Deployment **dropdown, select the **test** environment, then **Deploy** from the **Overview **tab. ![image alt text](./image/image_3.png)
+**1.5 **Click on the link to view your API proxy in Proxy Editor. Then click the **Deployment **dropdown, select the **test** environment, then **Deploy** from the **Overview **tab. ![image alt text](./images/image_3.png)
 
 **1.6** Once your API is deployed successfully, select **Develop** in the right side tab bar menu and the API Proxy configuration view is displayed.
 
@@ -65,19 +65,19 @@ The Spike Arrest policy protects against traffic spikes. It throttles the number
 
 **2.1**  Navigate to the **Target Endpoints **default** Preflow **and highlight the **Spike Arrest **policy. The default **Spike Arrest** rate in the API Proxy is 10pm.
 
-![image alt text](./image/image_4.png)
+![image alt text](./images/image_4.png)
 
 **2.2**    Select **Trace ** in the right side tab bar menu and the API Proxy configuration view is displayed and select **Start Trace Session. **
 
 ** 2.3**   Select **Overview** in the right side tab bar menu and select the **Deployments URL. **A new browser window will open and your will see a default HTTP 404 message. Add a forward slash and number I.E. **/1 **to the URL in your browser to return sample beer data. 
 
-![image alt text](./image/image_5.png)
+![image alt text](./images/image_5.png)
 
 *curl https://{***_FQDN_***}/v1/beers/1*
 
 Refresh your browser a few times to trigger the **Spike Arrest **policy. 
 
-Navigate back to the **Trace **right side tab bar menu, click on the **Spike Arrest** policy icon in the **Transaction Map** to view the flow details in the **Phase Details** section below.** **![image alt text](./image/image_6.png)
+Navigate back to the **Trace **right side tab bar menu, click on the **Spike Arrest** policy icon in the **Transaction Map** to view the flow details in the **Phase Details** section below.** **![image alt text](./images/image_6.png)
 
 ### Verify API Key Policy
 
@@ -87,7 +87,7 @@ The Verify API Key policy lets you enforce verification of API keys at runtime, 
 
 **2.4 **Navigate to the **Proxy Endpoints **default** Preflow **and highlight the **Verify API Key **policy. Change the ‘enabled=**false’** to ‘enabled=**true’**, then click the blue **Save** button.
 
-![image alt text](./image/image_7.png)
+![image alt text](./images/image_7.png)
 
 **2.5** Select **Trace** in the right side tab bar menu and the API Proxy configuration view is displayed and select **Start Trace Session. **
 
@@ -107,7 +107,7 @@ In this lab, we will see how to use the Apigee management APIs to automate the p
 
 **NOTE** : Use "*Basic ZWRnZWNsaTplZGdlY2xpc2VjcmV0*" value exactly as shown here. It is a hard-coded value that the API requires in the Authorization header.
 
-![image alt text](./image/image_8.png)
+![image alt text](./images/image_8.png)
 
 The response should look like this. Copy the first token which starts with access_token Copy the value starting with "ey…..". Do not copy the “”.
 
@@ -121,11 +121,11 @@ We will need the** access_tokens** to make all subsequent calls.
 
 You should see a response which looks like this: 
 
-![image alt text](./image/image_9.png)
+![image alt text](./images/image_9.png)
 
 Now if you go back to the Edge UI, you will notice that your Beer proxy is deployed on both test and prod environments. 
 
-![image alt text](./image/image_10.png)
+![image alt text](./images/image_10.png)
 
 ## Lab 4: Publishing the APIs
 
@@ -143,11 +143,11 @@ A Product is a logical grouping of Proxies.  In this section we will create a **
 
 2. Click **+API Product** in the upper right
 
-	![image alt text](./image/image_11.png)
+	![image alt text](./images/image_11.png)
 
 3. Name the product **BeerCatalog**.  Set the Environment to **test**, Access to **Public**, and Key Approval to **Automatic**.  Using the **+API Proxy** on the lower right, choose the **Beers **proxy from the dropdown list.  Click **Save**.
 
-	![image alt text](./image/image_12.png)
+	![image alt text](./images/image_12.png)
 
 ### Define a Developer
 
@@ -159,7 +159,7 @@ A Developer owns an Application, so we need to create a Developer next.
 
 2. Click **+Developer** in the upper right corner.
 
-	![image alt text](./image/image_13.png)
+	![image alt text](./images/image_13.png)
 
 3. Fill in your information.  Click **Create**.
 
@@ -173,15 +173,15 @@ We grant an Application access to a Product.  We will now define an Application 
 
 2. Click **+App** in the upper right corner.
 
-	![image alt text](./image/image_14.png)
+	![image alt text](./images/image_14.png)
 
 3. Name the application **DistributorApp**, choose the **Developer** you created earlier, click the **+Product** and choose the **BeerCatalog**, then click **Save**.
 
-	![image alt text](./image/image_15.png)
+	![image alt text](./images/image_15.png)
 
 4. Choose the **DistributorApp** from the application list.  Click the **Show** button underneath the **Consumer Key** section and copy the key shown.
 
-	![image alt text](./image/image_16.png)
+	![image alt text](./images/image_16.png)
 
 ### Test Your Proxy
 
@@ -231,7 +231,7 @@ In this lab, we will create & customize a developer portal and publish the Beer 
 
 4. Replace **<your-apigee-org-name>** in **host** attribute with your Apigee Org name. After you update, the value of host should look like this. 
 
-![image alt text](./image/image_17.png)
+![image alt text](./images/image_17.png)
 
 5. Click **Save**.
 
@@ -255,7 +255,7 @@ In this lab, we will create & customize a developer portal and publish the Beer 
 
 3. Click on the name of the newly created portal.
 
-	![image alt text](./image/image_18.png)
+	![image alt text](./images/image_18.png)
 
 4. Click **Assets**
 
@@ -263,31 +263,31 @@ In this lab, we will create & customize a developer portal and publish the Beer 
 
 6. Select **Themes** from the drop-down at the top.
 
-	![image alt text](./image/image_19.png)
+	![image alt text](./images/image_19.png)
 
 7. Replace the default style-sheet with [this content](https://raw.githubusercontent.com/sudheesreedhara/Iloveapis-apijam/master/Resources/theme.css).
 
-	![image alt text](./image/image_20.png)
+	![image alt text](./images/image_20.png)
 
 8. Click **Publish **to save the changes.
 
 9. Select **Pages** from the drop-down at the top.
 
-	![image alt text](./image/image_21.png)
+	![image alt text](./images/image_21.png)
 
 10. Select **Home** page and replace the content with this [snippet](https://raw.githubusercontent.com/sudheesreedhara/Iloveapis-apijam/master/Resources/homepage.html). 
 
 11. Click **Publish **to save the changes.
 
-**	**![image alt text](./image/image_22.png)
+**	**![image alt text](./images/image_22.png)
 
 12. Click **Live Portal **to view the customized portal.  
 
-	![image alt text](./image/image_23.png)
+	![image alt text](./images/image_23.png)
 
 13. You should see a portal similar to this - 
 
-![image alt text](./image/image_24.png)
+![image alt text](./images/image_24.png)
 
 ### Publish Documentation to the portal
 
@@ -301,23 +301,23 @@ In this lab, we will create & customize a developer portal and publish the Beer 
 
 5. On the next screen,  select  "**Choose a different spec**" from the drop-down.
 
-![image alt text](./image/image_25.png)
+![image alt text](./images/image_25.png)
 
 6. Select **Beer-Spec **and** **click **Finish **to publish the API Product and it’s documentation on to the portal**.** 
 
-**	**![image alt text](./image/image_26.png)
+**	**![image alt text](./images/image_26.png)
 
 7. Now if you go to the **Live Portal, **you will see Beer API documentation under APIs menu.
 
-	![image alt text](./image/image_27.png)
+	![image alt text](./images/image_27.png)
 
 8. Click on the API Doc link.
 
-![image alt text](./image/image_28.png)
+![image alt text](./images/image_28.png)
 
 9. Click **Try it out **and invoke the Beer API by providing a valid API key (Hint - Use the API key from **DistributorApp **you created in the previous lab).
 
-	![image alt text](./image/image_29.png)
+	![image alt text](./images/image_29.png)
 
 ## Lab 6: Analytics
 
@@ -337,29 +337,29 @@ The first step is to create some traffic that invokes an HTTP GET on random beer
 
 3. Click on **Develop** in the upper right.
 
-![image alt text](./image/image_30.png)
+![image alt text](./images/image_30.png)
 
 4. Select **PreFlow** under the **loadgenerator** Proxy Endpoint in the lower left column/pane.  
 
-![image alt text](./image/image_31.png)
+![image alt text](./images/image_31.png)
 
 5. Notice the yellow JavaScript (JS) policy named **LoadGenerator-JS** has already been created for you.  When you select it, you will see its XML configuration and you should notice that it runs some JavaScript code in a file named **load_generator.js**.
 
 6. Click on **load_generator.js** on the bottom left area of the screen.  This is the JavaScript code we wrote to generate some random traffic against the Beer Proxy.  You could always modify this code to create load as you’d like, but for this Lab just leave it as is.
 
-![image alt text](./image/image_32.png)
+![image alt text](./images/image_32.png)
 
 7. Before we generate the random load, we need to disable the Spike Arrest Policy that we saw earlier.  Select **PreFlow** under **TargetEndpoints** in the left column/pane.  Then Select the **Spike Arrest** Policy in the upper right pane.  Modify the XML for the Spike Arrest policy so **enabled="false”**.  Click **Save** in the upper left  when done.
 
-![image alt text](./image/image_33.png)
+![image alt text](./images/image_33.png)
 
 8. We will also need to disable the **Verify API Key Policy**.  Select **PreFlow** under **ProxyEndpoints** and select the **Verify API Key Policy**.  Then change **enabled="true”** to **enabled=”false”** and click **Save.**
 
-![image alt text](./image/image_34.png)
+![image alt text](./images/image_34.png)
 
 9. Now click on the **Trace** tab in the upper right of the screen.  If necessary, modify the URL after the hostname to be  **/v1/loadgenerator**.  Then click on **Start Trace Session**, and finally click on **Send** to generate some load against the Beer Proxy.  In the left column/pane, you can see several HTTP GET calls are made for randomly chosen beer id’s.
 
-![image alt text](./image/image_35.png)
+![image alt text](./images/image_35.png)
 
 ### Capture Statistics for Custom Reports
 
@@ -367,19 +367,19 @@ After you’ve generated some traffic, let’s make sure we are capturing the ri
 
 1.  Click on the **Develop** tab in the upper right.  Then click on **GET /:id **under **Proxy Endpoints**.  In the upper pane, you will see the two policies **Statistics Collector** and **Extract Variables** that we’ve already implemented for you in order to capture the "Beer Name" from the JSON response payload.  Take a look at these two policies but don’t change them -- they are used for creating Custom Reports (next step).
 
-![image alt text](./image/image_36.png)
+![image alt text](./images/image_36.png)
 
 1.   Now click on **Analyze ****-****> Reports **in the left pane.  Then click on **+Custom Report**
 
-![image alt text](./image/image_37.png)
+![image alt text](./images/image_37.png)
 
 1. Fill in the **Report Name**, **Report Description**, and choose **Column** as the **Chart Type**.  Then select **Traffic** in the **Metric** dropdown and choose **Sum** for **Aggregate Function**.  Finally, choose **beer_name** in the **Dimension** dropdown and click **Save** in the lower right.
 
-![image alt text](./image/image_38.png)
+![image alt text](./images/image_38.png)
 
 2. You should see a report similar to what is shown below.  Please note that it takes 5-10 minutes for API proxy requests to appear in these reports, so your report may need to be refreshed to capture the latest data.  Which beers were the most popular?
 
-![image alt text](./image/image_39.png)
+![image alt text](./images/image_39.png)
 
 ## Summary
 
@@ -397,4 +397,5 @@ Apigee Developer Videos
  [https://apigee.com/about/developers](https://apigee.com/about/developers) 
 
 Apigee Edge management APIs [https://docs.apigee.com/api-services/content/api-reference-getting-started](https://docs.apigee.com/api-services/content/api-reference-getting-started) 
+
 

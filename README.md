@@ -49,6 +49,10 @@ An API Proxy Bundle is a collection of API Proxy artifacts and policies that rep
   
   ```curl https://{FQDN}/v1/loadgenerator```
 
+NOTE - FQDN stands for fully-qualified domain name. You could find it under **Overview** tab of your API proxy.
+
+![image alt text](./images/image_40.png)
+
 ## Lab 2: Explore policies
 
 ### Summary

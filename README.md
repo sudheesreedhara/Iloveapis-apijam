@@ -314,7 +314,6 @@ In this lab, we will create & customize a developer portal and publish the Beer 
 ## Lab 6: Analytics
 
 ### Summary
-
 We are going to  the  traffic in a Custom Report.
 
 
@@ -340,7 +339,9 @@ After you’ve generated some traffic, let’s make sure we are capturing the ri
 
 ## Summary
 
-This concludes the API Jam workshop. We hope you enjoyed the hands-on session. 
+This concludes the API Jam workshop. We hope you enjoyed the hands-on session.  
+
+Please take a couple of minutes and share your [feedback](https://goo.gl/Hrz32x)
 
 ## References
 

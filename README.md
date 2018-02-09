@@ -96,7 +96,7 @@ In this lab, we will see how to use the Apigee management APIs to automate the p
 ```
 curl -X POST -H "Content-type:application/x-www-form-urlencoded" https://api.enterprise.apigee.com/v1/o/{Your-org-Name}/e/prod/apis/{Your-proxy-name}/revisions/1/deployments -u {Email-Address-of-your-Apigee-account}
 ```
-When prompted, enter your Password.
+When prompted, enter your Apigee Password.
 
 You should see a success response which looks like this: 
 ```

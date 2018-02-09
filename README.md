@@ -93,31 +93,35 @@ The Verify API Key policy lets you enforce verification of API keys at runtime, 
 
 In this lab, we will see how to use the Apigee management APIs to automate the promotion of API from a lower environment (test) to a higher environment (prod).
 
-1. Get OAuth credentials to access management APIs. 
-
 ```
-curl -H "Content-Type:application/x-www-form-urlencoded;charset=utf-8" -H "Accept: application/json;charset=utf-8" -H "Authorization: Basic ZWRnZWNsaTplZGdlY2xpc2VjcmV0"  -X POST https://login.apigee.com/oauth/token -d 'username={YOUR EMAIL}&password={YOUR_PASSWORD}&grant_type=password'
+curl -X POST -H "Content-type:application/x-www-form-urlencoded" https://api.enterprise.apigee.com/v1/o/{Your-org-Name}/e/prod/apis/{Your-proxy-name}/revisions/1/deployments -u {Email-Address-of-your-Apigee-account}
 ```
+NOTE - *Execution time of this command will be a minute or two*
 
-**NOTE** : Use "*Basic ZWRnZWNsaTplZGdlY2xpc2VjcmV0*" value exactly as shown here. It is a hard-coded value that the API requires in the Authorization header.
+When prompted, enter your Password.
 
-![image alt text](./images/image_8.png)
-
-The response should look like this. Copy the first token which starts with access_token Copy the value starting with "ey…..". Do not copy the “”.
-
-We will need the **access_tokens** to make all subsequent calls.
-
-2. Use the management APIs to promote the proxy deployed in test to prod environment. 
-*Execution time will be a minute or two*
-
+You should see a success response which looks like this: 
 ```
-curl -X POST -H "Content-type:application/x-www-form-urlencoded" https://api.enterprise.apigee.com/v1/o/{Your-org-Name}/e/prod/apis/{Your-proxy-name}/revisions/1/deployments -H "Authorization: Bearer {Access_token here}"
+{
+  "aPIProxy" : "Beers",
+  "configuration" : {
+    "basePath" : "/",
+    "steps" : [ ]
+  },
+  "environment" : "prod",
+  "name" : "1",
+  "organization" : "{your_organization}",
+  "revision" : "1",
+  "server" : [ {
+    "status" : "deployed",
+    "type" : [ "message-processor" ],
+    "uUID" : "71c113ae-7ca7-4001-a727-e9d30764ab59"
+  } ... 
+  .....
+   ],
+  "state" : "deployed"
+ }
 ```
-
-You should see a response which looks like this: 
-
-![image alt text](./images/image_9.png)
-
 Now if you go back to the Edge UI, you will notice that your Beer proxy is deployed on both test and prod environments. 
 
 ![image alt text](./images/image_10.png)

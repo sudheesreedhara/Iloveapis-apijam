@@ -96,8 +96,6 @@ In this lab, we will see how to use the Apigee management APIs to automate the p
 ```
 curl -X POST -H "Content-type:application/x-www-form-urlencoded" https://api.enterprise.apigee.com/v1/o/{Your-org-Name}/e/prod/apis/{Your-proxy-name}/revisions/1/deployments -u {Email-Address-of-your-Apigee-account}
 ```
-NOTE - *Execution time of this command will be a minute or two*
-
 When prompted, enter your Password.
 
 You should see a success response which looks like this: 
@@ -122,9 +120,13 @@ You should see a success response which looks like this:
   "state" : "deployed"
  }
 ```
+*NOTE - Execution time of this command will be a minute or two*
+
 Now if you go back to the Edge UI, you will notice that your Beer proxy is deployed on both test and prod environments. 
 
 ![image alt text](./images/image_10.png)
+
+This lab demonstrates how easy it is in Apigee Edge to automate the management activities. These APIs can be scripted or included into automation systems like Jenkins. In fact, all of the capabilities exposed in the management UI, is built upon the Management APIs. Links to Apigee management APIs and related documentation can be found in the References section.
 
 ## Lab 4: Publishing the APIs
 

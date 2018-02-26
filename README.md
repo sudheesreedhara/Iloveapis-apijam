@@ -102,7 +102,7 @@ In the subsequent lab, we will see how to pass the API key to make a successful 
 
 ### Summary
 
-In this lab, we will see how to use the Apigee management APIs to automate the promotion of API from a lower environment (test) to a higher environment (prod).
+In this lab, we will see how to use the Apigee management APIs to automate the promotion of API from a lower environment (test) to a higher environment (prod). Copy the following command into an editor and update Org name, Proxy name and your email address before executing. 
 
 ```
 curl -X POST -H "Content-type:application/x-www-form-urlencoded" https://api.enterprise.apigee.com/v1/o/{Your-org-Name}/e/prod/apis/{Your-proxy-name}/revisions/1/deployments -u {Your-Apigee-Email-Address}

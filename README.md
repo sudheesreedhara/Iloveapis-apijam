@@ -96,6 +96,8 @@ The Verify API Key policy lets you enforce verification of API keys at runtime, 
 
         curl https://{FQDN}/v1/beers/1
 
+In the subsequent lab, we will see how to pass the API key to make a successful (HTTP 200) calls.
+
 ## Lab 3: Management APIs
 
 ### Summary

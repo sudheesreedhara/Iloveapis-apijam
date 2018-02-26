@@ -337,24 +337,24 @@ In this lab, we will create & customize a developer portal and publish the Beer 
 ### Summary
 We are going to  the  traffic in a Custom Report.
 
-
 ### Capture Statistics for Custom Reports
 
 After you’ve generated some traffic, let’s make sure we are capturing the right data from that traffic so we can analyze it via Custom Reports. 
 
-1.  Click on the **Develop** tab in the upper right.  Then click on **GET /:id** under **Proxy Endpoints**.  In the upper pane, you will see the two policies **Statistics Collector** and **Extract Variables** that we’ve already implemented for you in order to capture the "Beer Name" from the JSON response payload.  Take a look at these two policies but don’t change them -- they are used for creating Custom Reports (next step).
+1. Navigate to **Publish → Develop**. Select your API Proxy.
+2. Click on the **Develop** tab in the upper right.  Then click on **GET /:id** under **Proxy Endpoints**.  In the upper pane, you will see the two policies **Statistics Collector** and **Extract Variables** that we’ve already implemented for you in order to capture the "Beer Name" from the JSON response payload.  Take a look at these two policies but don’t change them -- they are used for creating Custom Reports (next step).
 
 ![image alt text](./images/image_36.png)
 
-1.   Now click on **Analyze > Reports** in the left pane.  Then click on **+Custom Report**
+3.   Now click on **Analyze > Reports** in the left pane.  Then click on **+Custom Report**
 
 ![image alt text](./images/image_37.png)
 
-1. Fill in the **Report Name**, **Report Description**, and choose **Column** as the **Chart Type**.  Then select **Traffic** in the **Metric** dropdown and choose **Sum** for **Aggregate Function**.  Finally, choose **beer_name** in the **Dimension** dropdown and click **Save** in the lower right.
+4. Fill in the **Report Name**, **Report Description**, and choose **Column** as the **Chart Type**.  Then select **Traffic** in the **Metric** dropdown and choose **Sum** for **Aggregate Function**.  Finally, choose **beer_name** in the **Dimension** dropdown and click **Save** in the lower right.
 
 ![image alt text](./images/image_38.png)
 
-2. You should see a report similar to what is shown below.  Please note that it takes 5-10 minutes for API proxy requests to appear in these reports, so your report may need to be refreshed to capture the latest data.  Which beers were the most popular?
+5. You should see a report similar to what is shown below.  Please note that it takes 5-10 minutes for API proxy requests to appear in these reports, so your report may need to be refreshed to capture the latest data.  Which beers were the most popular?
 
 ![image alt text](./images/image_39.png)
 

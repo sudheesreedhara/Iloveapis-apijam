@@ -374,6 +374,9 @@ Apigee Documentation
 
 Apigee Developer Videos
  [https://apigee.com/about/developers](https://apigee.com/about/developers) 
+ 
+Apigee 4 Minute Developer Videos
+ [https://www.youtube.com/playlist?list=PLIXjuPlujxxxe3iTmLtgfIBgpMo7iD7fk](https://www.youtube.com/playlist?list=PLIXjuPlujxxxe3iTmLtgfIBgpMo7iD7fk) 
 
 Apigee Edge management APIs [https://docs.apigee.com/api-services/content/api-reference-getting-started](https://docs.apigee.com/api-services/content/api-reference-getting-started) 
 

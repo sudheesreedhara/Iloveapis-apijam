@@ -346,7 +346,8 @@ We are going to  the  traffic in a Custom Report.
 
 After you’ve generated some traffic, let’s make sure we are capturing the right data from that traffic so we can analyze it via Custom Reports. 
 
-1. Navigate to **Publish → Develop**. Select your API Proxy.
+
+1. Navigate to **Develop -> API Proxies** and choose your proxy.
 2. Click on the **Develop** tab in the upper right.  Then click on **GET /:id** under **Proxy Endpoints**.  In the upper pane, you will see the two policies **Statistics Collector** and **Extract Variables** that we’ve already implemented for you in order to capture the "Beer Name" from the JSON response payload.  Take a look at these two policies but don’t change them -- they are used for creating Custom Reports (next step).
 
 ![image alt text](./images/image_36.png)
